@@ -1,0 +1,7 @@
+| UC | Name | Actor | Requirement | Use Case Text |
+|---|---|---|---|---|
+| UC1 | View doctor availability | Patient | R1 | As a Patient, I view the days and times when a doctor is available to find a suitable slot. |
+| UC2 | Book appointment | Patient | R2, R4 | As a Patient, I book an appointment during an available time slot.<br><br>**Main Flow:**<br>1. Patient selects an available time slot.<br>2. System verifies the patient has not exceeded the maximum limit of N upcoming appointments.<br>3. System submits the appointment request to the doctor.<br>4. Doctor accepts the request.<br>5. System confirms the booking and notifies the patient.<br><br>**Alternative Flow (Limit Reached):**<br>1. Patient selects an available time slot.<br>2. System verifies the patient has reached the maximum limit of N upcoming appointments.<br>3. System aborts the booking process and displays an error message to the patient. |
+| UC3 | Accept or decline appointment | Doctor | R3 | As a Doctor, I accept or decline an appointment request to manage my schedule. |
+| UC4 | Enforce appointment limit | System | R4 | As the System, I enforce the rule that a patient can have at most N upcoming appointments at any given time. |
+| UC5 | Notify appointment status | System | R3 | As the System, I notify the patient whether their appointment request was accepted or declined by the doctor. |
