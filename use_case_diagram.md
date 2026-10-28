@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     P([Patient])
     D([Doctor])
@@ -15,3 +16,4 @@ flowchart LR
     UC3 --- D
     UC4 -.->|"«extend»"| UC2
     UC5 -.->|"«extend»"| UC3
+```
